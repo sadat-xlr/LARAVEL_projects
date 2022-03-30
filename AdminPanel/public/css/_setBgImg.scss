@@ -1,0 +1,10 @@
+@mixin setBgImg($img, $position, $height, $width) {
+    background: url($img) no-repeat;
+    background-position: $position center;
+    background-size: $height $width;
+
+    @media only screen and (max-width: 575px){
+        background-position: center;
+        background-size: 100% auto;
+    }
+}

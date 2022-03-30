@@ -1,0 +1,43 @@
+/* For Side Item Active */
+.side-item-active {
+    background-color: #161365;
+    border-radius: 5px;
+}
+
+.side-item-active a {
+    color: white;
+}
+
+.side-item-active .side-icon {
+    color: #053EFF;
+}
+
+/* For Side Item Hover */
+.nav-item:hover {
+    background-color: #161365;
+    border-radius: 5px;
+}
+
+.nav-item:hover .dark-silver-text {
+    color: white;
+}
+
+.nav-item:hover .side-icon {
+    color: #053EFF;
+}
+
+/* For Language Button */
+.language-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+/* For Logout Button */
+.logout-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+}

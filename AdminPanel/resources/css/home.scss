@@ -1,0 +1,413 @@
+@import 'setBgImg';
+@import 'headingDesign';
+
+/*Reusuable css start*/
+.active{
+  font-weight: 600;
+}
+
+.secTop{
+  font-family: 'Jost', sans-serif;
+  h6{
+    color: #053eff;
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  h2{
+    font-weight: 300;
+    font-size: 48px;
+    span{
+      font-family: 'Arimo', sans-serif;
+      font-weight: 800;
+    }
+  }
+
+  @media only screen and (max-width: 575px){
+    h6{
+      font-size: 18px;
+    }
+
+    h2{
+      font-size: 26px;
+    }
+  }
+}
+
+@mixin lMore {
+  padding: 10px 25px;
+  background: #053EFF;
+  font-weight: 600;
+}
+
+@mixin aboutH2{
+  font-weight: 300;
+  font-size: 48px;
+
+  @media only screen and (max-width: 767px){
+    font-size: 30px;
+  }
+}
+
+@mixin centered($tb, $val, $verTranslate) {
+  @if $tb == top {
+    top: $val;
+  }@else if $tb == bottom{
+    bottom: $val;
+  }
+
+  left: 50%;
+  transform: translate(-50%, $verTranslate);
+}
+
+@mixin serviceAndPriceTxt {
+  h6{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .5px;
+  }
+
+  p{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+}
+
+/*Reusuable css end*/
+
+body{
+  font-family: 'Arimo', sans-serif;
+}
+
+/* Header css start */
+header{
+  #mainNav{
+    transition: .5s;
+
+  }
+  .logo{
+    color: #414141;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: large;
+  }
+
+  li{
+    margin: 0 5px;
+  }
+
+  a{
+    color: #000!important;
+    letter-spacing: 1px;
+    transition: .5s;
+    font-size: 14px;
+  }
+
+  @media only screen and (min-width: 992px ) and (max-width: 1200px){
+    li{
+      margin: 0;
+    }
+    a{
+      font-size: 12px;
+    }
+  }
+
+  .active, a:hover{
+    color: #5EBCE7!important;
+  }
+
+  .outsideNavBtn{
+    padding: 5px 25px;
+  }
+
+  .langBtn, .login{
+    background: #E6E6E6;
+    font-weight: 600;
+  }
+
+  .langBtn{
+    color: #053EFF;
+    font-size: 12px;
+  }
+
+  .register{
+    background: #053EFF;
+    font-weight: 600;
+  }
+
+  .register:hover{
+    background: #5EBCE7;
+    color: #fff!important;
+  }
+}
+/* Header css end */
+
+/* Banner css start */
+.banner{
+  @include setBgImg('../img/home/home.png', right, 50%, auto);
+  .bannerLeft{
+    width: 50%;
+    @include headingDesing;
+
+    h6{
+      font-size: 25px;
+    }
+
+    .learnMore{
+      @include lMore;
+    }
+  }
+}
+/* Banner css end */
+
+/* About css start */
+.aboutUs{
+  @include setBgImg('../img/home/aboutus.png', left, auto, 100%);
+
+  .aboutDesc{
+    width: 50%;
+  }
+
+  h4{
+    font-weight: bold;
+  }
+
+  h2{
+    @include aboutH2;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  a{
+    @include lMore;
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px){
+    background-size: auto 50%;
+    p{
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+}
+
+.whyUs{
+  width: 50%;
+  h2{
+    @include aboutH2;
+  }
+}
+/* About css end */
+
+/* Banner and about mobile css start */
+@media only screen and (max-width: 575px){
+  .banner{
+    background: linear-gradient(#ffffffca, #ffffffce), url(../img/home/home.png);
+
+    .bannerLeft{
+      width: 100%;
+    }
+  }
+
+  .aboutUs{
+    background: linear-gradient(#ffffffca, #ffffffce), url(../img/home/aboutus.png);
+    .aboutDesc, .whyUs{
+      width: 100%;
+    }
+  }
+}
+/* Banner and about mobile css end */
+
+/* Why us feat start*/
+@mixin whyUsDesing($pSize) {
+  .featTxt{
+    color: #141414;
+    h4{
+      font-size: 16px;
+      font-weight: 600;
+      font-family: 'Arimo', sans-serif;
+    }
+
+    p{
+      font-size: $pSize;
+      font-weight: 500;
+    }
+  }
+}
+
+.whyUsFeat{
+  .largeFeat{
+    border-radius: 15px;
+
+    @include whyUsDesing(14px);
+    .why2ImgWrap{
+      padding-bottom: 10px;
+    }
+    .why2Img{
+      margin-top: -10px;
+    }
+  }
+
+  .singleSmallFeat{
+    border-radius: 10px;
+    @include whyUsDesing(12px);
+  }
+}
+/* Why us feat end*/
+
+
+/* Service css start */
+.service{
+  img{
+    border-radius: 15px;
+  }
+
+  @include serviceAndPriceTxt;
+
+  .bigServieRight{
+    width: 75%;
+    padding: 120px 0;
+
+    @media only screen and (max-width: 991px){
+      width: 100%;
+      padding: 20px 0;
+    }
+  }
+
+}
+/* Service css end */
+
+
+/* Pricing css start */
+.pricing{
+  .priceWrap{
+    background: #faf7f7;
+    border-radius: 15px;
+    color: #141414;
+
+    h6{
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    h4{
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    h4:before{
+      content: '';
+      position: absolute;
+      @include centered(bottom, 0, 0);
+      background: #053eff;
+      width: 40%;
+      height: 4px;
+    }
+
+    .singlePack{
+      border-radius: 15px;
+
+      ul{
+        li {
+          font-size: 14px;
+          line-height: 30px;
+          font-weight: 500;
+        }
+      }
+
+      a{
+        @include lMore;
+        padding: 10px 40px;
+        @include centered(bottom, 30px, 0);
+      }
+
+      .priceBottomSpace{
+        min-height: 60px;
+      }
+    }
+
+    .pro{
+      background: #053eff;
+      h4:before{
+        background: #fff;
+      }
+      a{
+        background: #0332d1;
+      }
+    }
+  }
+
+  .pricingBottom{
+    max-width: 768px;
+    margin-top: -20px;
+    background: #f9c34c;
+    border-radius: 15px;
+    @include serviceAndPriceTxt;
+
+    @media only screen and (max-width: 991px){
+      margin-top: 20px;
+    }
+
+    a{
+      @include lMore;
+      background: #f2b42a;
+      color: #141414;
+      font-weight: 500;
+    }
+  }
+}
+/* Pricing css end */
+
+
+/* Footer top css start */
+.footerTop{
+  .foterTopRight{
+    @include headingDesing;
+    @media only screen and (max-width: 991px){
+      @include smallHeadingSize;
+    }
+    p{
+      font-size: 16px;
+    }
+
+    a{
+      @include lMore;
+    }
+  }
+}
+/* Footer top css end */
+
+
+/* Footer css start */
+footer{
+  background: #141414;
+
+  .singleFooterWidget{
+    h6{
+      color: #053eff;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    li, p{
+      font-size: 14px;
+    }
+  }
+
+  .footerMenu{
+    a{
+      color: #053eff;
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+  }
+}
+/* Footer css end */

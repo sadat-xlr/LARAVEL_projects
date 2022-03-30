@@ -1,0 +1,21 @@
+/* For Select Field Icon */
+.overview .form-select {
+    background-image: url("../images/down-arrow.svg");
+}
+
+/* For Chart */
+#chart {
+    height: 250px;
+    width: 100%;
+}
+
+.canvasjs-chart-credit {
+    display: none;
+}
+
+/* For Overview Details */
+@media only screen and (max-width: 1024px) {
+    .overview .col {
+        text-align: center;
+    }
+}

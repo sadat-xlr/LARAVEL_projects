@@ -1,0 +1,5 @@
+@mixin fBasis($num, $percent) {
+    span:nth-child($num){
+        flex-basis: $percent!important;
+    }
+}

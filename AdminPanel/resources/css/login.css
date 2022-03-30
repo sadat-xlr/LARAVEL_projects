@@ -1,0 +1,293 @@
+body {
+  background: #11104D;
+}
+
+.authWrap {
+  background: url("../img/signup/bg.png") no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+  background-position: left top;
+  max-width: 960px;
+}
+
+@media only screen and (max-width: 575px) {
+  .authWrap {
+    background-position: center;
+    background-size: 100% auto;
+  }
+}
+
+.authWrap form {
+  width: 50%;
+}
+
+.authWrap form h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.authWrap form input {
+  border-color: #0F176D;
+  color: #c2c2c4;
+  background: #121053;
+}
+
+.authWrap form input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: #0b0a38;
+  color: #c5c5e9;
+  border-color: #0217ff;
+}
+
+.authWrap form .policyWrap {
+  color: #101010;
+}
+
+.authWrap form .policyWrap h6 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.authWrap form .policyWrap p {
+  font-size: 14px;
+}
+
+.authWrap form .policyWrap label {
+  font-weight: 600;
+}
+
+.authWrap form .policyWrap label .chk {
+  left: 0;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  z-index: 5;
+  border-color: #141414 !important;
+}
+
+.authWrap form .policyWrap label input {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+.authWrap form .policyWrap label input:checked ~ .chk {
+  background: url(../img/signup/tik.png) no-repeat;
+}
+
+.authWrap form .accordion .collapsed {
+  background: #EFEFF7;
+}
+
+.authWrap form .accordion h2 {
+  background: #F7F7FF;
+}
+
+.authWrap form .accordion button {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.authWrap form .accordion button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.authWrap form .submitBtnWrap p {
+  color: #101010;
+  font-size: 16px;
+}
+
+.authWrap form .submitBtnWrap p a {
+  color: #053EFF;
+  font-weight: 500;
+}
+
+.authWrap form .submitBtnWrap button {
+  background: #053EFF;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .authWrap {
+    background: -webkit-gradient(linear, left top, left bottom, from(#11104db0), to(#11104da8)), url("../img/signup/bg.png") no-repeat;
+    background: linear-gradient(#11104db0, #11104da8), url("../img/signup/bg.png") no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+  .authWrap form {
+    width: 100%;
+  }
+  .authWrap form h2 {
+    font-size: 30px;
+  }
+}
+
+.signin {
+  background-position: left center;
+}
+
+.verify input, .verify .submitBtnWrap, .verify .customFileField {
+  max-width: 450px;
+}
+
+.verify .resendOTP, .verify .resendOTP a {
+  font-weight: 600;
+  color: #101010;
+}
+
+.verifyEmail {
+  background: url("../img/signup/verifyEmail.png") no-repeat;
+  background-position: left center;
+  background-size: 50% auto;
+}
+
+@media only screen and (max-width: 575px) {
+  .verifyEmail {
+    background-position: center;
+    background-size: 100% auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .verifyEmail {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff91), to(#ffffff83)), url("../img/signup/verifyEmail.png") no-repeat;
+    background: linear-gradient(#ffffff91, #ffffff83), url("../img/signup/verifyEmail.png") no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+}
+
+.verifyMobile {
+  background: url("../img/signup/verifyMobile.png") no-repeat;
+  background-position: left center;
+  background-size: 50% auto;
+}
+
+@media only screen and (max-width: 575px) {
+  .verifyMobile {
+    background-position: center;
+    background-size: 100% auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .verifyMobile {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff91), to(#ffffff83)), url("../img/signup/verifyMobile.png") no-repeat;
+    background: linear-gradient(#ffffff91, #ffffff83), url("../img/signup/verifyMobile.png") no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+}
+
+.uploadId {
+  background: url("../img/signup/uploadId.png") no-repeat;
+  background-position: left center;
+  background-size: 50% auto;
+}
+
+@media only screen and (max-width: 575px) {
+  .uploadId {
+    background-position: center;
+    background-size: 100% auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .uploadId {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff91), to(#ffffff83)), url("../img/signup/uploadId.png") no-repeat;
+    background: linear-gradient(#ffffff91, #ffffff83), url("../img/signup/uploadId.png") no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+}
+
+.uploadId .customFileField {
+  border-color: #B9C8FF;
+  padding: 3px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  background: #F7F7FF;
+}
+
+.uploadId .customFileField p {
+  color: #858589;
+  font-size: 14px;
+}
+
+.uploadId .customFileField .browse {
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 100px;
+  background: #053EFF;
+  font-weight: 500;
+}
+
+.uploadId .removeImg {
+  top: 5px;
+  right: 5px;
+}
+
+.uploadId .customFileField:hover {
+  background: #fff;
+}
+
+.uploadId .customFileField:hover .browse {
+  background: #031d72;
+}
+
+.uploadId .submitBtnWrap .idImg {
+  padding: 2px;
+  border: 1px solid #c4cef8;
+  border-radius: 4px;
+}
+
+.uploadId .submitBtnWrap .imgWrap {
+  cursor: pointer;
+  background: #DEE4FF;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.uploadId .submitBtnWrap .condition {
+  color: #858589;
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 991px) {
+  .uploadId .customFileField .removeImg {
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+  }
+  .uploadId .customFileField p {
+    font-size: 16px;
+  }
+  .uploadId .customFileField:hover .removeImg {
+    opacity: 1;
+  }
+  .uploadId .imgWrap:hover {
+    background: #8fa2f7;
+  }
+}
+
+.uploadIdSuccess {
+  max-width: 575px;
+  background: none;
+}
+
+.uploadIdSuccess h2 {
+  font-weight: 700;
+}
+
+.uploadIdSuccess p {
+  font-weight: 600;
+}
+
+.uploadIdSuccess a {
+  background: #053EFF;
+}
+/*# sourceMappingURL=login.css.map */

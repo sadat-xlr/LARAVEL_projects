@@ -1,0 +1,70 @@
+/* For Switch */
+.form-switch, .form-check-input, .form-check-label {
+    cursor: pointer;
+}
+
+/* For Notification */
+.notification-badge {
+    padding: 2px;
+}
+
+/* For Profile Picture */
+.profile-picture {
+    width: 30px;
+}
+
+/* For Search Bar */
+.search-click {
+    width: 50px;
+    height: 10px;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.search-click-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.search-click-btn:focus .search-click {
+    width: 300px;
+    visibility: visible;
+}
+
+.search-click:focus {
+    width: 300px;
+    visibility: visible;
+}
+
+.search-click {
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    outline: none;
+    outline: 2px solid #053fff4f;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.search-click input {
+    background: transparent;
+    outline: none;
+    position: absolute;
+    width: 300px;
+    height: 35px;
+}
+
+/* For User Section */
+.user-mobile-tablet-view {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .user-desktop-view {
+        display: none !important;
+    }
+
+    .user-mobile-tablet-view {
+        display: block;
+    }
+}

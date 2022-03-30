@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Icon_ionic-ios-sunny" data-name="Icon ionic-ios-sunny" transform="translate(-3.375 -3.375)">
+    <g id="Group_140" data-name="Group 140" transform="translate(3.375 3.375)">
+      <path id="Path_307" data-name="Path 307" d="M17.658,27.211a.741.741,0,0,0-.74.74v2.221a.74.74,0,0,0,1.481,0V27.951A.741.741,0,0,0,17.658,27.211Z" transform="translate(-7.658 -10.913)" fill="#053eff"/>
+      <path id="Path_308" data-name="Path 308" d="M17.658,3.375a.741.741,0,0,0-.74.74V6.337a.74.74,0,0,0,1.481,0V4.115A.741.741,0,0,0,17.658,3.375Z" transform="translate(-7.658 -3.375)" fill="#053eff"/>
+      <path id="Path_309" data-name="Path 309" d="M7.077,17.658a.741.741,0,0,0-.74-.74H4.115a.74.74,0,0,0,0,1.481H6.337A.741.741,0,0,0,7.077,17.658Z" transform="translate(-3.375 -7.658)" fill="#053eff"/>
+      <path id="Path_310" data-name="Path 310" d="M30.172,16.917H27.951a.74.74,0,0,0,0,1.481h2.221a.74.74,0,0,0,0-1.481Z" transform="translate(-10.913 -7.658)" fill="#053eff"/>
+      <path id="Path_311" data-name="Path 311" d="M9.653,24.195a.738.738,0,0,0-.524.216L7.557,25.983a.741.741,0,0,0,1.048,1.048l1.572-1.572a.74.74,0,0,0-.524-1.264Z" transform="translate(-4.629 -9.959)" fill="#053eff"/>
+      <path id="Path_312" data-name="Path 312" d="M24.935,10.394a.738.738,0,0,0,.524-.216l1.572-1.572a.741.741,0,0,0-1.048-1.048L24.411,9.129a.74.74,0,0,0,.524,1.264Z" transform="translate(-9.959 -4.629)" fill="#053eff"/>
+      <path id="Path_313" data-name="Path 313" d="M8.605,7.557A.741.741,0,0,0,7.557,8.605l1.572,1.572a.741.741,0,0,0,1.048-1.048Z" transform="translate(-4.629 -4.629)" fill="#053eff"/>
+      <path id="Path_314" data-name="Path 314" d="M25.459,24.411a.741.741,0,0,0-1.048,1.048l1.572,1.572a.741.741,0,0,0,1.048-1.048Z" transform="translate(-9.959 -9.959)" fill="#053eff"/>
+    </g>
+    <path id="Path_315" data-name="Path 315" d="M15.865,11.25a4.615,4.615,0,1,0,4.615,4.615,4.623,4.623,0,0,0-4.615-4.615Z" transform="translate(-2.49 -2.49)" fill="#053eff"/>
+  </g>
+</svg>

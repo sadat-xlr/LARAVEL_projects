@@ -1,0 +1,26 @@
+@mixin customFileField{
+    .customFileField{
+        border-color: #B9C8FF;
+        padding: 3px;
+        transition: .3s;
+        cursor: pointer;
+        background: #F7F7FF;
+
+        p{
+            color: #858589;
+            font-size: 14px;
+        }
+
+        .browse{
+            transition: .3s;
+            width: 100px;
+            background: #053EFF;
+            font-weight: 500;
+        }
+    }
+
+    .removeImg{
+        top: 5px;
+        right: 5px;
+    }
+}

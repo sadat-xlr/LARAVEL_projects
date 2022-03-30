@@ -1,0 +1,120 @@
+/* Background Color */
+.dark-blue-bg {
+    background-color: #11104D;
+}
+
+.light-blue-bg {
+    background-color: #161365;
+}
+
+.more-light-blue-bg {
+    background-color: #1d1a85;
+}
+
+.blue-bg {
+    background-color: #053EFF;
+}
+
+.red-bg {
+    background-color: #FF1414;
+}
+
+.green-bg {
+    background-color: #2DBF00;
+}
+
+.yellow-bg {
+    background-color: #FF7308;
+}
+
+.dark-silver-bg {
+    background-color: #454391;
+}
+
+/* Text Color */
+.blue-text {
+    color: #053EFF;
+}
+
+.silver-text {
+    color: #79799B;
+}
+
+.red-text {
+    color: #FF1414;
+}
+
+.dark-red-text {
+    color: #d11010;
+}
+
+.yellow-text {
+    color: #F3AB02;
+}
+
+.dark-silver-text {
+    color: #454391;
+}
+
+/* Text Size */
+.small-text {
+    font-size: 12px;
+}
+
+.more-small-text {
+    font-size: 10px;
+}
+
+.super-text {
+    font-size: 8px;
+}
+
+/* Border Radius */
+.square-radius {
+    border-radius: 5px;
+}
+
+.more-square-radius {
+    border-radius: 15px;
+}
+
+.small-radius {
+    border-radius: 2px;
+}
+
+/* Modal */
+.modal .btn-close {
+    background: url("../img/cross-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+
+.blue-border-bottom {
+    border-bottom: 1px solid #053EFF;
+}
+
+.modal .btn-close:focus, .modal .modal-body .btn:focus {
+    box-shadow: none;
+}
+
+.profile-picture-modal {
+    width: 70px;
+}
+
+/* For Date Field */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url("../images/calender.svg") no-repeat;
+}
+
+input[type="date"]:focus {
+    background-color: transparent;
+}
+
+input[type="text"]:focus {
+    background-color: transparent;
+}
+
+/* For Hide Element */
+.hide {
+    visibility: hidden;
+}

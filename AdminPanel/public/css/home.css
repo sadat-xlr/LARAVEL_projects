@@ -1,0 +1,498 @@
+/*Reusuable css start*/
+.active {
+  font-weight: 600;
+}
+
+.secTop {
+  font-family: 'Jost', sans-serif;
+}
+
+.secTop h6 {
+  color: #053eff;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.secTop h2 {
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.secTop h2 span {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 575px) {
+  .secTop h6 {
+    font-size: 18px;
+  }
+  .secTop h2 {
+    font-size: 26px;
+  }
+}
+
+/*Reusuable css end*/
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+/* Header css start */
+header #mainNav {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .logo {
+  color: #414141;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: large;
+}
+
+header li {
+  margin: 0 5px;
+}
+
+header a {
+  color: #000 !important;
+  letter-spacing: 1px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  header li {
+    margin: 0;
+  }
+  header a {
+    font-size: 12px;
+  }
+}
+
+header .active, header a:hover {
+  color: #5EBCE7 !important;
+}
+
+header .outsideNavBtn {
+  padding: 5px 25px;
+}
+
+header .langBtn, header .login {
+  background: #E6E6E6;
+  font-weight: 600;
+}
+
+header .langBtn {
+  color: #053EFF;
+  font-size: 12px;
+}
+
+header .register {
+  background: #053EFF;
+  font-weight: 600;
+}
+
+header .register:hover {
+  background: #5EBCE7;
+  color: #fff !important;
+}
+
+/* Header css end */
+/* Banner css start */
+.banner {
+  background: url("../img/home/home.png") no-repeat;
+  background-position: right center;
+  background-size: 50% auto;
+}
+
+@media only screen and (max-width: 575px) {
+  .banner {
+    background-position: center;
+    background-size: 100% auto;
+  }
+}
+
+.banner .bannerLeft {
+  width: 50%;
+  color: #000;
+}
+
+.banner .bannerLeft h2, .banner .bannerLeft h4 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.banner .bannerLeft h4 {
+  font-weight: 300;
+}
+
+.banner .bannerLeft p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 575px) {
+  .banner .bannerLeft h2, .banner .bannerLeft h4 {
+    font-size: 30px;
+  }
+  .banner .bannerLeft p {
+    font-size: 16px;
+  }
+}
+
+.banner .bannerLeft h6 {
+  font-size: 25px;
+}
+
+.banner .bannerLeft .learnMore {
+  padding: 10px 25px;
+  background: #053EFF;
+  font-weight: 600;
+}
+
+/* Banner css end */
+/* About css start */
+.aboutUs {
+  background: url("../img/home/aboutus.png") no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+}
+
+@media only screen and (max-width: 575px) {
+  .aboutUs {
+    background-position: center;
+    background-size: 100% auto;
+  }
+}
+
+.aboutUs .aboutDesc {
+  width: 50%;
+}
+
+.aboutUs h4 {
+  font-weight: bold;
+}
+
+.aboutUs h2 {
+  font-weight: 300;
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  .aboutUs h2 {
+    font-size: 30px;
+  }
+}
+
+.aboutUs p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.aboutUs a {
+  padding: 10px 25px;
+  background: #053EFF;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .aboutUs {
+    background-size: auto 50%;
+  }
+  .aboutUs p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.whyUs {
+  width: 50%;
+}
+
+.whyUs h2 {
+  font-weight: 300;
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  .whyUs h2 {
+    font-size: 30px;
+  }
+}
+
+/* About css end */
+/* Banner and about mobile css start */
+@media only screen and (max-width: 575px) {
+  .banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffffca), to(#ffffffce)), url(../img/home/home.png);
+    background: linear-gradient(#ffffffca, #ffffffce), url(../img/home/home.png);
+  }
+  .banner .bannerLeft {
+    width: 100%;
+  }
+  .aboutUs {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffffca), to(#ffffffce)), url(../img/home/aboutus.png);
+    background: linear-gradient(#ffffffca, #ffffffce), url(../img/home/aboutus.png);
+  }
+  .aboutUs .aboutDesc, .aboutUs .whyUs {
+    width: 100%;
+  }
+}
+
+/* Banner and about mobile css end */
+/* Why us feat start*/
+.whyUsFeat .largeFeat {
+  border-radius: 15px;
+}
+
+.whyUsFeat .largeFeat .featTxt {
+  color: #141414;
+}
+
+.whyUsFeat .largeFeat .featTxt h4 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Arimo', sans-serif;
+}
+
+.whyUsFeat .largeFeat .featTxt p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.whyUsFeat .largeFeat .why2ImgWrap {
+  padding-bottom: 10px;
+}
+
+.whyUsFeat .largeFeat .why2Img {
+  margin-top: -10px;
+}
+
+.whyUsFeat .singleSmallFeat {
+  border-radius: 10px;
+}
+
+.whyUsFeat .singleSmallFeat .featTxt {
+  color: #141414;
+}
+
+.whyUsFeat .singleSmallFeat .featTxt h4 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Arimo', sans-serif;
+}
+
+.whyUsFeat .singleSmallFeat .featTxt p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Why us feat end*/
+/* Service css start */
+.service img {
+  border-radius: 15px;
+}
+
+.service h6 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.service p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.service .bigServieRight {
+  width: 75%;
+  padding: 120px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .service .bigServieRight {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+/* Service css end */
+/* Pricing css start */
+.pricing .priceWrap {
+  background: #faf7f7;
+  border-radius: 15px;
+  color: #141414;
+}
+
+.pricing .priceWrap h6 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.pricing .priceWrap h4 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.pricing .priceWrap h4:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #053eff;
+  width: 40%;
+  height: 4px;
+}
+
+.pricing .priceWrap .singlePack {
+  border-radius: 15px;
+}
+
+.pricing .priceWrap .singlePack ul li {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.pricing .priceWrap .singlePack a {
+  padding: 10px 25px;
+  background: #053EFF;
+  font-weight: 600;
+  padding: 10px 40px;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.pricing .priceWrap .singlePack .priceBottomSpace {
+  min-height: 60px;
+}
+
+.pricing .priceWrap .pro {
+  background: #053eff;
+}
+
+.pricing .priceWrap .pro h4:before {
+  background: #fff;
+}
+
+.pricing .priceWrap .pro a {
+  background: #0332d1;
+}
+
+.pricing .pricingBottom {
+  max-width: 768px;
+  margin-top: -20px;
+  background: #f9c34c;
+  border-radius: 15px;
+}
+
+.pricing .pricingBottom h6 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.pricing .pricingBottom p {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .pricing .pricingBottom {
+    margin-top: 20px;
+  }
+}
+
+.pricing .pricingBottom a {
+  padding: 10px 25px;
+  background: #053EFF;
+  font-weight: 600;
+  background: #f2b42a;
+  color: #141414;
+  font-weight: 500;
+}
+
+/* Pricing css end */
+/* Footer top css start */
+.footerTop .foterTopRight {
+  color: #000;
+}
+
+.footerTop .foterTopRight h2, .footerTop .foterTopRight h4 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.footerTop .foterTopRight h4 {
+  font-weight: 300;
+}
+
+.footerTop .foterTopRight p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 575px) {
+  .footerTop .foterTopRight h2, .footerTop .foterTopRight h4 {
+    font-size: 30px;
+  }
+  .footerTop .foterTopRight p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .footerTop .foterTopRight h2, .footerTop .foterTopRight h4 {
+    font-size: 30px;
+  }
+  .footerTop .foterTopRight p {
+    font-size: 16px;
+  }
+}
+
+.footerTop .foterTopRight p {
+  font-size: 16px;
+}
+
+.footerTop .foterTopRight a {
+  padding: 10px 25px;
+  background: #053EFF;
+  font-weight: 600;
+}
+
+/* Footer top css end */
+/* Footer css start */
+footer {
+  background: #141414;
+}
+
+footer .singleFooterWidget h6 {
+  color: #053eff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+footer .singleFooterWidget li, footer .singleFooterWidget p {
+  font-size: 14px;
+}
+
+footer .footerMenu a {
+  color: #053eff;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+footer .footerMenu p {
+  font-size: 14px;
+}
+
+/* Footer css end */
+/*# sourceMappingURL=home.css.map */

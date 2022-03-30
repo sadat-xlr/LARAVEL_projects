@@ -1,0 +1,79 @@
+/* Responsive Modal */
+@media only screen and (max-width: 414px) {
+    .modal-header {
+        text-align: center;
+    }
+
+    .modal .btn-close {
+        margin-top: 0;
+    }
+
+    .modal-body {
+        text-align: center;
+    }
+
+    .modal-body .text-end {
+        text-align: center !important;
+    }
+
+    .p-sm {
+        margin-bottom: 50px !important;
+    }
+
+    .sm-center {
+        text-align: center;
+    }
+
+    .margin-sm-right {
+        margin-right: 30px;
+    }
+
+    .edit-input {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    .text-right {
+        text-align: end;
+    }
+
+    .sm-center {
+        text-align: start;
+    }
+}
+
+.checkboxWrap input[type='checkbox'] {
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    left: 0px;
+    top: -5px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.checkboxWrap .custChk {
+    width: 15px;
+    height: 15px;
+    background: #053EFF;
+    border-radius: 50%;
+    left: -20px;
+    z-index: 1;
+    box-shadow: 0 0 0 7px #11104d;
+    top: 5px;
+}
+
+.checkboxWrap input[type='checkbox']:checked ~ .custChk{
+    background: #02d2f6;
+    box-shadow: 0 0 0 7px #0885a5;
+}
+
+.edit-input:disabled {
+    background: transparent;
+}
+
+.edit-input:focus{
+    box-shadow: none!important;
+}

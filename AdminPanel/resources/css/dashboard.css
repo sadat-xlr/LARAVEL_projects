@@ -1,0 +1,1685 @@
+body {
+  background: #F7F7FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.maxContainer {
+  max-width: 1680px;
+}
+
+.spacer {
+  height: 60px;
+}
+
+header {
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 12;
+  background: #F7F7FF;
+  top: 0;
+  left: 0;
+}
+
+header .logo {
+  width: 200px;
+}
+
+header .logo #navToggler {
+  width: 40px;
+}
+
+header .menuList {
+  width: calc(100% - 220px);
+}
+
+header .menuList .headerMenuItems {
+  width: calc(100% - 215px);
+}
+
+header .menuList .headerMenuItems .darkToggler {
+  min-width: 85px;
+  background: url(../img/dashboard/moon.svg) no-repeat;
+  background-position: right 9px;
+  background-size: 17px auto;
+}
+
+header .menuList .headerMenuItems .darkToggler .switchBtnLabel {
+  width: 40px;
+}
+
+header .menuList .headerMenuItems .darkToggler .switchChk {
+  z-index: 5;
+  opacity: 0;
+  top: 9px;
+  left: 5px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+header .menuList .headerMenuItems .darkToggler .switchButton {
+  left: 5px;
+  top: 15px;
+  width: 30px;
+  height: 10px;
+  background: #CDD8FF;
+}
+
+header .menuList .headerMenuItems .darkToggler .switchButton:before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #053EFF;
+  top: -5px;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+header .menuList .headerMenuItems .darkToggler .switchBtnLabel .switchChk:checked ~ .switchButton {
+  background: #CDD8FF;
+}
+
+header .menuList .headerMenuItems .darkToggler .switchBtnLabel .switchChk:checked ~ .switchButton:before {
+  left: 12px;
+  background: #454391;
+}
+
+header .menuList .headerMenuItems li .activeBell::before {
+  content: '';
+  position: absolute;
+  background: #053EFF;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  top: -4px;
+  right: 4px;
+}
+
+header .menuList .headerMenuItems li .srchIcon {
+  background-image: url(../img/dashboard/search.svg);
+  margin-top: 4px;
+}
+
+header .menuList .headerMenuItems li button {
+  width: 25px;
+  height: 25px;
+}
+
+header .menuList .headerMenuItems li .srchIcon, header .menuList .headerMenuItems li .bellIcon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px auto;
+}
+
+header .menuList .headerMenuItems li .bellIcon {
+  background-image: url(../img/dashboard/bell.svg);
+  background-size: 18px auto !important;
+}
+
+header .menuList .usrInfo {
+  width: 205px;
+}
+
+header .menuList .usrInfo p {
+  color: #141414;
+  margin-bottom: -5px;
+}
+
+header .menuList .usrInfo p span {
+  color: #053EFF;
+  font-weight: 700;
+}
+
+header .menuList .usrInfo img {
+  border-radius: 5px;
+}
+
+header .menuList .usrInfo .status {
+  font-size: 12px;
+  padding: 0 5px;
+  padding-bottom: 2px;
+}
+
+header .menuList .usrInfo .unvarified {
+  background: #FF0F0F;
+}
+
+header .menuList .usrInfo::before {
+  background: #B9B9BF;
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 1px;
+  height: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+  header .logo {
+    width: 160px;
+  }
+  header .logo a {
+    margin-right: 0;
+  }
+  header .logo a img {
+    width: 115px;
+  }
+  header .logo #navToggler {
+    width: 35px;
+  }
+  header .menuList {
+    width: calc(100% - 170px);
+  }
+  header .menuList .headerMenuItems {
+    width: calc(100% - 200px);
+  }
+  header .menuList .headerMenuItems li .switchBtnLabel {
+    width: 30px;
+  }
+  header .menuList .headerMenuItems li .switchBtnLabel .switchButton {
+    left: 0;
+  }
+  header .menuList .usrInfo {
+    width: 190px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header #headerMenuToggler {
+    font-size: 20px;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    height: 30px;
+  }
+  header .logo {
+    width: 100%;
+  }
+  header .logo a {
+    margin-right: 0;
+  }
+  header .logo a img {
+    width: auto;
+  }
+  header .logo #navToggler {
+    width: 40px;
+  }
+  header .menuList {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .menuList .headerMenuItems {
+    -ms-flex-preferred-size: 90px;
+        flex-basis: 90px;
+    padding: 0 5px;
+  }
+  header .menuList .usrInfo {
+    padding: 5px;
+  }
+  header .menuList .usrInfo::before {
+    height: 60px;
+  }
+}
+
+nav {
+  bottom: 0;
+  width: 210px;
+  background: #F7F7FF;
+  z-index: 9;
+  overflow-y: auto;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+nav ul li a {
+  font-size: 13px;
+  color: #101010;
+  background-repeat: no-repeat;
+  background-position: left 5px center;
+  padding-left: 25px;
+  background-size: 20px;
+}
+
+nav ul li a img {
+  width: 25px;
+  height: auto;
+}
+
+nav ul li .dashboard {
+  background-image: url(../img/dashboard/pie.svg);
+}
+
+nav ul li .usrMngmt {
+  background-image: url(../img/dashboard/2friends.svg);
+}
+
+nav ul li .deposMngmt {
+  background-image: url(../img/dashboard/deposit.svg);
+}
+
+nav ul li .withMngmt {
+  background-image: url(../img/dashboard/withdrawal.svg);
+}
+
+nav ul li .financeMngmt {
+  background-image: url(../img/dashboard/coins.svg);
+}
+
+nav ul li .ps {
+  background-image: url(../img/dashboard/p&s.svg);
+}
+
+nav ul li .quoteMngmt {
+  background-image: url(../img/dashboard/quote.png);
+}
+
+nav ul li .benifMngmt {
+  background-image: url(../img/dashboard/group.png);
+}
+
+nav ul li a:hover, nav ul li .active {
+  background-color: #EAEDFF;
+  font-weight: 600;
+}
+
+nav .menuBottom .logout {
+  background: #053EFF;
+}
+
+nav .menuBottom .logout img {
+  width: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+  }
+}
+
+nav .opened {
+  left: 0;
+}
+
+nav.opened {
+  left: 10px;
+}
+
+nav::-webkit-scrollbar, nav .langList::-webkit-scrollbar {
+  width: 5px;
+}
+
+nav::-webkit-scrollbar-thumb, nav .langList::-webkit-scrollbar-thumb, .transationHistory::-webkit-scrollbar-thumb, .userMngmtWrap::-webkit-scrollbar-thumb {
+  background: #B9B9BF;
+  border-radius: 50px;
+}
+
+main {
+  width: calc(100% - 220px);
+}
+
+main .transationHistory::-webkit-scrollbar, main .userMngmtWrap::-webkit-scrollbar {
+  height: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+}
+
+main .pageHeading h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main .pageHeading p {
+  color: #838387;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main .accountSummary .singleSummary {
+  border-radius: 10px;
+}
+
+main .accountSummary .singleSummary .summaryLeft {
+  width: 20%;
+  background: #CDD8FF;
+  padding: 10px 0;
+  padding-bottom: 12px;
+  min-height: 45px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 25px;
+}
+
+main .accountSummary .singleSummary .money {
+  background-image: url(../img/dashboard/money.svg);
+}
+
+main .accountSummary .singleSummary .profit {
+  background-image: url(../img/dashboard/profit.svg);
+}
+
+main .accountSummary .singleSummary .withdrawal {
+  background-image: url(../img/dashboard/withdrawal.svg);
+}
+
+main .accountSummary .singleSummary .wallet {
+  background-image: url(../img/dashboard/wallet.svg);
+}
+
+main .accountSummary .singleSummary .summaryRight {
+  width: 80%;
+  color: #101010;
+}
+
+main .accountSummary .singleSummary .summaryRight h4 {
+  font-size: 14px;
+}
+
+main .accountSummary .singleSummary .summaryRight p {
+  color: #878787;
+  font-size: 12px;
+}
+
+main .accountSummary .singleSummary .summaryRight h3 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+main .statics .singleStat {
+  border-radius: 10px;
+}
+
+main .statics .analyticsWrap {
+  min-height: 380px;
+}
+
+main .statics .analyticsWrap .analyticsGraph {
+  bottom: 0;
+  left: 0;
+}
+
+main .statics .statTitle {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .4px;
+}
+
+main .statics .statTitle span {
+  font-weight: 700;
+  color: #1F52FF;
+}
+
+main .statics .overviewTable thead select {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  width: calc(50% - 2px);
+  background: #FCFCFF;
+  top: 0;
+}
+
+main .statics .overviewTable thead .firstTh select {
+  left: 0;
+}
+
+main .statics .overviewTable thead .lastTh select {
+  right: 0;
+}
+
+main .statics .overviewTable thead .dropdownContainer {
+  height: 50px;
+}
+
+main .statics .overviewTable thead .dropdownContainer::before, main .statics .overviewTable thead .dropdownContainer::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  border: 5px solid transparent;
+  border-top-color: #101010;
+  z-index: 10;
+}
+
+main .statics .overviewTable thead .dropdownContainer::before {
+  right: 10px;
+}
+
+main .statics .overviewTable thead .dropdownContainer::after {
+  left: calc(50% - 22px);
+}
+
+main .statics .overviewTable tbody tr {
+  border-radius: 10px;
+}
+
+main .statics .overviewTable tbody tr td {
+  position: relative;
+  z-index: 2;
+  font-size: 12px;
+}
+
+main .statics .overviewTable tbody tr td .overviewSub {
+  color: #053EFF;
+}
+
+main .statics .overviewTable tbody tr td sup {
+  font-size: 8px;
+  font-weight: 700;
+}
+
+main .statics .overviewTable tbody tr .amount {
+  font-weight: 500;
+}
+
+main .statics .overviewTable tbody tr:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+main .statics .overviewTable tbody tr:hover:before {
+  background: #F2F5FF;
+}
+
+main .statics .ipLogWrap .ipLogTable {
+  font-size: 13px;
+}
+
+main .statics .ipLogWrap .ipLogTable .logTitle {
+  color: #ACACAC;
+  font-style: italic;
+}
+
+main .statics .ipLogWrap .ipLogTable .logTitle span {
+  width: 49%;
+}
+
+main .statics .ipLogWrap .ipLogTable li {
+  background: #FFFBF2;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+main .statics .ipLogWrap .ipLogTable li span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .statics .ipLogWrap .ipLogTable li span .time {
+  color: #F3AB02;
+}
+
+main .statics .ipLogWrap .ipLogTable li .ipAddress {
+  font-weight: 700;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+  main .statics .ipLogWrap .ipLogTable {
+    font-size: 11px;
+  }
+  main .statics .ipLogWrap .ipLogTable .ipAddress {
+    font-size: 10px;
+  }
+}
+
+main .depositFundsContents .fundCalculator {
+  background: #F3AB02;
+  border-radius: 10px;
+  color: #F7F1EB;
+  font-size: 12px;
+}
+
+main .depositFundsContents .fundCalculator .calcTitle img {
+  width: 45px;
+}
+
+main .depositFundsContents .fundCalculator .calcTitle p {
+  font-weight: 700;
+  border-left: 1px solid #f7f1eb85;
+}
+
+main .depositFundsContents .fundCalculator .amountInput p {
+  font-weight: 600;
+}
+
+main .depositFundsContents .fundCalculator .amountInput .icon {
+  background: #F6BC35;
+  border-right: none;
+}
+
+main .depositFundsContents .fundCalculator .amountInput .icon img {
+  width: 15px;
+}
+
+main .depositFundsContents .fundCalculator .amountInput .icon, main .depositFundsContents .fundCalculator .amountInput input {
+  border-color: #F7C858 !important;
+}
+
+main .depositFundsContents .fundCalculator .amountInput input {
+  color: #f1efeb;
+  border-left: none;
+  background: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main .depositFundsContents .fundCalculator .amountInput input::-webkit-input-placeholder {
+  color: #F7C655;
+}
+
+main .depositFundsContents .fundCalculator .amountInput input:-ms-input-placeholder {
+  color: #F7C655;
+}
+
+main .depositFundsContents .fundCalculator .amountInput input::-ms-input-placeholder {
+  color: #F7C655;
+}
+
+main .depositFundsContents .fundCalculator .amountInput input::placeholder {
+  color: #F7C655;
+}
+
+main .depositFundsContents .fundCalculator .amountInput input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: #e0a009;
+}
+
+@media only screen and (min-width: 1100px) {
+  main .depositFundsContents .fundCalculator {
+    letter-spacing: .5px;
+    font-size: 13px;
+  }
+}
+
+main .depositFundsContents .depWit {
+  border-radius: 10px;
+}
+
+main .depositFundsContents .depWit .customFileField {
+  border-color: #B9C8FF;
+  padding: 3px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  background: #F7F7FF;
+}
+
+main .depositFundsContents .depWit .customFileField p {
+  color: #858589;
+  font-size: 14px;
+}
+
+main .depositFundsContents .depWit .customFileField .browse {
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 100px;
+  background: #053EFF;
+  font-weight: 500;
+}
+
+main .depositFundsContents .depWit .removeImg {
+  top: 5px;
+  right: 5px;
+}
+
+main .depositFundsContents .depWit .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #101010;
+}
+
+main .depositFundsContents .depWit .qrWrap {
+  width: 205px;
+  border-radius: 10px;
+  padding: 35px;
+  border: 1px solid #BFCDFF;
+}
+
+main .depositFundsContents .depWit .depositInputs {
+  padding-top: 20px;
+}
+
+main .depositFundsContents .depWit .depositInputs #copyWalAdd {
+  cursor: pointer;
+}
+
+main .depositFundsContents .depWit .depositInputs .icon, main .depositFundsContents .depWit .depositInputs input {
+  border-color: #BFCDFF;
+}
+
+main .depositFundsContents .depWit .depositInputs input {
+  background: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .depositFundsContents .depWit .depositInputs input:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+main .depositFundsContents .depWit .depositInputs .icon {
+  background: #CDD8FF;
+  width: 50px;
+  padding: 12px 0;
+}
+
+main .depositFundsContents .depWit .customFileField {
+  padding: 0;
+}
+
+main .depositFundsContents .depWit .customFileField .icon {
+  width: 50px;
+  padding: 8px;
+  padding-bottom: 10px;
+  background: #CDD8FF;
+}
+
+main .depositFundsContents .depWit .customFileField .browse {
+  width: auto;
+  padding: 3px;
+  font-size: 14px;
+  height: 40px;
+}
+
+main .depositFundsContents .depWit .customFileField .paymentScreenshot {
+  width: calc(100% - 55px);
+  padding: 2px;
+}
+
+main .depositFundsContents .depWit .conf {
+  background: url(../img/dashboard/tik.png) no-repeat;
+  background-position: 10px center;
+  background-color: #053EFF;
+  padding: 9px 12px;
+  padding-left: 32px;
+  background-size: 20px auto;
+  font-weight: 500;
+}
+
+main .depositFundsContents .depWit .witFund {
+  background-image: url(../img/dashboard/walletWhite.svg);
+  background-size: 15px auto;
+}
+
+main .depositFundsContents .depWit .balance h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #053EFF;
+}
+
+main .depositFundsContents .depWit .balance p {
+  font-weight: 700;
+  font-style: italic;
+}
+
+main .depositFundsContents .depWit .witFund {
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 576px) {
+  main .depositFundsContents .depWit .depositInputs {
+    width: calc(100% - 215px);
+  }
+  main .depositFundsContents .depWit .fileFieldWrap {
+    max-width: calc(100% - 195px);
+  }
+  main .depositFundsContents .depWit .fileFieldWrap .browse {
+    width: 100px;
+  }
+  main .depositFundsContents .depWit .conf {
+    margin-left: 20px;
+  }
+  main .depositFundsContents .depWit .balance h3 {
+    font-size: 35px;
+  }
+  main .depositFundsContents .depWit .currentBal::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 1px;
+    height: 30px;
+    background: #949494;
+  }
+  main .depositFundsContents .depWit .witFund {
+    margin-top: -10px;
+  }
+}
+
+main .history {
+  border-radius: 10px;
+}
+
+main .history .dateRange .icon {
+  background: #CDD8FF;
+  border-right: none;
+  padding: 10px 15px;
+}
+
+main .history .dateRange .icon, main .history .dateRange input {
+  border-color: #9AB0FF;
+  color: #898989;
+  font-size: 14px;
+}
+
+main .history .dateRange input {
+  border-left: none;
+}
+
+main .history .dateRange input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .history .hisTable li {
+  border-radius: 10px;
+  background: #FFFBF2;
+}
+
+main .history .hisTable li span {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  color: #101010;
+}
+
+main .history .hisTable li .id {
+  color: #053EFF;
+  font-weight: 600;
+}
+
+main .history .hisTable li span:nth-child(2) {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .history .hisTable .dhTitle span {
+  color: #ACACAC;
+  font-weight: 600;
+  font-size: 11px;
+  font-style: italic;
+}
+
+main .history .witTable li span {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+main .history .witTable li span:nth-child(1) {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+main .history .witTable li span:nth-child(2) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+main .history .witTable li span:nth-child(3) {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+main .history .dateRange .singleInputWrap {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+@media only screen and (max-width: 991px) {
+  main .history .dateRange .singleInputWrap {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+main .history .transHisTable {
+  min-width: 475px;
+}
+
+main .history .transHisTable li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .history .transHisTable li span {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+main .history .transHisTable li span:nth-child(2) {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+@media only screen and (max-width: 450px), (min-width: 992px) and (max-width: 1339px) {
+  main .history .witTable li {
+    font-size: 11px;
+  }
+  main .history .witTable .dhTitle span {
+    font-size: 9px;
+  }
+}
+
+main .psRowsWrap .singlePS {
+  border-radius: 10px;
+}
+
+main .psRowsWrap .singlePS form {
+  font-size: 13px;
+}
+
+main .psRowsWrap .singlePS form label {
+  color: #202020;
+  font-weight: 500;
+}
+
+main .psRowsWrap .singlePS form label img {
+  width: 13px;
+}
+
+main .psRowsWrap .singlePS form input {
+  padding: 2px 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #282828;
+  border-color: #DADADA;
+}
+
+main .psRowsWrap .singlePS form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+main .psRowsWrap .singlePS form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+main .psRowsWrap .singlePS form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+main .psRowsWrap .singlePS form input::placeholder {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+main .psRowsWrap .singlePS form input:-moz-read-only {
+  background: #f7f7f7;
+}
+
+main .psRowsWrap .singlePS form input:read-only {
+  background: #f7f7f7;
+}
+
+main .psRowsWrap .singlePS form .newPic p {
+  font-size: 12px;
+  font-weight: 700;
+  font-style: italic;
+  color: #053EFF;
+  cursor: pointer;
+}
+
+main .psRowsWrap .singlePS form .newPic img {
+  max-width: 120px;
+  border-radius: 15px;
+}
+
+main .psRowsWrap .singlePS form .newPic button {
+  top: 2px;
+  right: 2px;
+  padding: 0 5px;
+}
+
+main .psRowsWrap .singlePS form button {
+  font-size: 14px;
+  font-weight: 500;
+  background: #053EFF;
+}
+
+main .userMngmtWrap .userMngmtTbl {
+  min-width: 1050px;
+}
+
+main .userMngmtWrap .userMngmtTbl .dateRange {
+  max-width: 620px;
+}
+
+main .userMngmtWrap .userMngmtTbl .dateRange .singleInputWrap {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+main .userMngmtWrap .userMngmtTbl .dateRange .singleInputWrap .icon {
+  padding: 7px 10px;
+}
+
+main .userMngmtWrap .userMngmtTbl .dateRange .singleInputWrap input {
+  padding: 5px 10px;
+}
+
+main .userMngmtWrap .userMngmtTbl .dateRange select {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  background: #E9ECEF;
+  border-color: #CDD8FF;
+  font-size: 14px;
+  padding: 5px;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm, main .userMngmtWrap .userMngmtTbl .dmData .singleUm, main .userMngmtWrap .userMngmtTbl .ps .singleUm {
+  font-size: 13px;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm .id, main .userMngmtWrap .userMngmtTbl .umData .singleUm .fileAttached a, main .userMngmtWrap .userMngmtTbl .umData .singleUm .paymentFile a, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .id, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .fileAttached a, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .paymentFile a, main .userMngmtWrap .userMngmtTbl .ps .singleUm .id, main .userMngmtWrap .userMngmtTbl .ps .singleUm .fileAttached a, main .userMngmtWrap .userMngmtTbl .ps .singleUm .paymentFile a {
+  color: #F3AB02 !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm .badge, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .badge, main .userMngmtWrap .userMngmtTbl .ps .singleUm .badge {
+  padding: 4px 5px;
+  padding-bottom: 6px;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm .pending, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .pending, main .userMngmtWrap .userMngmtTbl .ps .singleUm .pending {
+  background: #FF1414;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm .varified, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .varified, main .userMngmtWrap .userMngmtTbl .ps .singleUm .varified {
+  background: #2DBF00;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm .notSubmitted, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .notSubmitted, main .userMngmtWrap .userMngmtTbl .ps .singleUm .notSubmitted {
+  background: #FF7308;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm .opts, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .opts, main .userMngmtWrap .userMngmtTbl .ps .singleUm .opts {
+  right: 15px;
+  top: 13px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm .opts img, main .userMngmtWrap .userMngmtTbl .dmData .singleUm .opts img, main .userMngmtWrap .userMngmtTbl .ps .singleUm .opts img {
+  width: auto;
+  height: 25px;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm:hover .opts, main .userMngmtWrap .userMngmtTbl .dmData .singleUm:hover .opts, main .userMngmtWrap .userMngmtTbl .ps .singleUm:hover .opts {
+  opacity: 1;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm span:nth-child(1) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm span:nth-child(2) {
+  -ms-flex-preferred-size: 12% !important;
+      flex-basis: 12% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm span:nth-child(3) {
+  -ms-flex-preferred-size: 18% !important;
+      flex-basis: 18% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm span:nth-child(4) {
+  -ms-flex-preferred-size: 15% !important;
+      flex-basis: 15% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm span:nth-child(5) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm span:nth-child(6) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm span:nth-child(7) {
+  -ms-flex-preferred-size: 15% !important;
+      flex-basis: 15% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .umData .singleUm span:nth-child(8) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .dmData .singleUm span:nth-child(1) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .dmData .singleUm span:nth-child(2) {
+  -ms-flex-preferred-size: 15% !important;
+      flex-basis: 15% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .dmData .singleUm span:nth-child(3) {
+  -ms-flex-preferred-size: 15% !important;
+      flex-basis: 15% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .dmData .singleUm span:nth-child(4) {
+  -ms-flex-preferred-size: 20% !important;
+      flex-basis: 20% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .dmData .singleUm span:nth-child(5) {
+  -ms-flex-preferred-size: 20% !important;
+      flex-basis: 20% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .dmData .singleUm span:nth-child(6) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .dmData .singleUm span:nth-child(7) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .ps .singleUm span:nth-child(1) {
+  -ms-flex-preferred-size: 15% !important;
+      flex-basis: 15% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .ps .singleUm span:nth-child(2) {
+  -ms-flex-preferred-size: 20% !important;
+      flex-basis: 20% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .ps .singleUm span:nth-child(3) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .ps .singleUm span:nth-child(4) {
+  -ms-flex-preferred-size: 15% !important;
+      flex-basis: 15% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .ps .singleUm span:nth-child(5) {
+  -ms-flex-preferred-size: 20% !important;
+      flex-basis: 20% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .ps .singleUm span:nth-child(6) {
+  -ms-flex-preferred-size: 20% !important;
+      flex-basis: 20% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(1) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(2) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(3) {
+  -ms-flex-preferred-size: 12% !important;
+      flex-basis: 12% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(4) {
+  -ms-flex-preferred-size: 17% !important;
+      flex-basis: 17% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(5) {
+  -ms-flex-preferred-size: 17% !important;
+      flex-basis: 17% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(6) {
+  -ms-flex-preferred-size: 7% !important;
+      flex-basis: 7% !important;
+  text-align: center;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(7) {
+  -ms-flex-preferred-size: 7% !important;
+      flex-basis: 7% !important;
+  text-align: center;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(8) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+  text-align: center;
+}
+
+main .userMngmtWrap .userMngmtTbl .withData .singleUm span:nth-child(9) {
+  -ms-flex-preferred-size: 5% !important;
+      flex-basis: 5% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(1) {
+  -ms-flex-preferred-size: 15% !important;
+      flex-basis: 15% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(2) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(3) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(4) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(5) {
+  -ms-flex-preferred-size: 11% !important;
+      flex-basis: 11% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(6) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(7) {
+  -ms-flex-preferred-size: 12% !important;
+      flex-basis: 12% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(8) {
+  -ms-flex-preferred-size: 12% !important;
+      flex-basis: 12% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .finMan .singleUm span:nth-child(9) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(1) {
+  -ms-flex-preferred-size: 18% !important;
+      flex-basis: 18% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(2) {
+  -ms-flex-preferred-size: 15% !important;
+      flex-basis: 15% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(3) {
+  -ms-flex-preferred-size: 7% !important;
+      flex-basis: 7% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(4) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(5) {
+  -ms-flex-preferred-size: 10% !important;
+      flex-basis: 10% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(6) {
+  -ms-flex-preferred-size: 4% !important;
+      flex-basis: 4% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(7) {
+  -ms-flex-preferred-size: 12% !important;
+      flex-basis: 12% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(8) {
+  -ms-flex-preferred-size: 12% !important;
+      flex-basis: 12% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .quoteMan .singleUm span:nth-child(9) {
+  -ms-flex-preferred-size: 12% !important;
+      flex-basis: 12% !important;
+  text-align: center;
+}
+
+main .userMngmtWrap .userMngmtTbl .benData .singleUm span {
+  -ms-flex-preferred-size: 20% !important;
+      flex-basis: 20% !important;
+}
+
+main .userMngmtWrap .userMngmtTbl .benData .singleUm span:nth-child(5) {
+  -ms-flex-preferred-size: 20% !important;
+      flex-basis: 20% !important;
+  text-align: right;
+}
+
+main .userMngmtWrap .userMngmtTbl .pagination button:disabled {
+  opacity: .8;
+}
+
+main .userMngmtWrap .userMngmtTbl .export {
+  right: 20px;
+  top: 20px;
+  background: #053EFF;
+  padding-bottom: 7px;
+}
+
+main .userMngmtWrap .userMngmtTbl .add {
+  right: 150px;
+}
+
+main .userMngmtWrap .userMngmtTbl .options {
+  right: 30px;
+  top: 20px;
+  min-height: 20px;
+  z-index: 1;
+  border: 2px solid #313131;
+  border-radius: 8px;
+  padding: 5px 15px;
+  background: #fff;
+}
+
+main .userMngmtWrap .userMngmtTbl .options button {
+  border: none;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #313131;
+  font-weight: 600;
+  min-width: 180px;
+  text-align: left;
+  background: no-repeat;
+  background-position: left center;
+  padding-left: 25px;
+}
+
+main .userMngmtWrap .userMngmtTbl .options button:hover {
+  color: #FF7308;
+}
+
+main .userMngmtWrap .userMngmtTbl .options button:nth-child(2) {
+  border-top: 1px solid #313131;
+  border-bottom: 1px solid #313131;
+}
+
+main .userMngmtWrap .userMngmtTbl .options .view {
+  background-image: url(../img/eye.png);
+}
+
+main .userMngmtWrap .userMngmtTbl .options .pause {
+  background-image: url(../img/pause.png);
+}
+
+main .userMngmtWrap .userMngmtTbl .options .delete {
+  background-image: url(../img/delete.png);
+  color: #FF1414 !important;
+}
+
+main .userMngmtWrap .pagination button {
+  background: #161365;
+}
+
+main .userMngmtWrap .pagination button img {
+  height: 18px;
+  width: auto;
+}
+
+main .widgetTitle {
+  color: #202020;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.popupWrap {
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 5000;
+  background: #181100de;
+}
+
+.popupWrap .popupMsg {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 480px;
+  max-width: calc(100% - 10px);
+  padding: 30px 5px;
+  color: #101010;
+}
+
+.popupWrap .popupMsg img {
+  width: 50px;
+}
+
+.popupWrap .popupMsg h4 {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.popupWrap .popupMsg p {
+  font-size: 14px;
+}
+
+.popupWrap .popupMsg a {
+  background: #053EFF;
+}
+
+/* Dark Mode */
+.dark {
+  background: #11104D;
+}
+
+.dark header .darkToggler {
+  background-image: url(../img/dashboard/moonWhite.svg) !important;
+}
+
+.dark header .menuList .usrInfo p {
+  color: #053EFF;
+}
+
+.dark header .menuList .usrInfo p span {
+  color: #fff;
+}
+
+.dark header .srchIcon {
+  background-image: url(../img/dashboard/searchDark.svg) !important;
+}
+
+.dark header .bellIcon {
+  background: url(../img/dashboard/bellDark.svg) no-repeat !important;
+}
+
+.dark header .activeBell::before {
+  background: #F3AB02 !important;
+}
+
+.dark .widgetTitle, .dark p, .dark input, .dark label {
+  color: #fff !important;
+}
+
+.dark nav, .dark header, .dark .singleStat li:not(:first-child), .dark .statics .overviewTable tbody tr:hover:before {
+  background: #11104D !important;
+}
+
+.dark nav ul .dashboard:not(.active) {
+  background-image: url(../img/dashboard/pieDark.svg);
+}
+
+.dark nav ul .usrMngmt:not(.active) {
+  background-image: url(../img/dashboard/2friendsDark.svg);
+}
+
+.dark nav ul .deposMngmt:not(.active) {
+  background-image: url(../img/dashboard/depositDark.svg);
+}
+
+.dark nav ul .withMngmt:not(.active) {
+  background-image: url(../img/dashboard/withdrawFundDark.svg);
+}
+
+.dark nav ul .financeMngmt:not(.active) {
+  background-image: url(../img/dashboard/coinsDark.svg);
+}
+
+.dark nav ul .ps:not(.active) {
+  background-image: url(../img/dashboard/p&sDark.svg);
+}
+
+.dark nav ul .quoteMngmt:not(.active) {
+  background-image: url(../img/dashboard/quoteDark.png);
+}
+
+.dark nav ul .benifMngmt:not(.active) {
+  background-image: url(../img/dashboard/groupDark.png);
+}
+
+.dark .active, .dark .singleSummary, .dark .singleStat, .dark .singleStat select, .dark nav a:hover, .dark .depWit, .dark .history, .dark .singlePS, .dark .popupMsg {
+  background-color: #161365 !important;
+  color: #fff;
+}
+
+.dark .active li:not(.logTitle), .dark .singleSummary li:not(.logTitle), .dark .singleStat li:not(.logTitle), .dark .singleStat select li:not(.logTitle), .dark nav a:hover li:not(.logTitle), .dark .depWit li:not(.logTitle), .dark .history li:not(.logTitle), .dark .singlePS li:not(.logTitle), .dark .popupMsg li:not(.logTitle) {
+  background: #11104D !important;
+}
+
+.dark .active li:not(.logTitle) span:not(.id):not(.fileAttached), .dark .singleSummary li:not(.logTitle) span:not(.id):not(.fileAttached), .dark .singleStat li:not(.logTitle) span:not(.id):not(.fileAttached), .dark .singleStat select li:not(.logTitle) span:not(.id):not(.fileAttached), .dark nav a:hover li:not(.logTitle) span:not(.id):not(.fileAttached), .dark .depWit li:not(.logTitle) span:not(.id):not(.fileAttached), .dark .history li:not(.logTitle) span:not(.id):not(.fileAttached), .dark .singlePS li:not(.logTitle) span:not(.id):not(.fileAttached), .dark .popupMsg li:not(.logTitle) span:not(.id):not(.fileAttached) {
+  color: #fff !important;
+}
+
+.dark .history .logTitle span {
+  color: #5C5A93 !important;
+}
+
+.dark .singlePS input {
+  background: transparent !important;
+}
+
+.dark .statics .overviewTable thead .dropdownContainer::after, .dark .statics .overviewTable thead .dropdownContainer::before {
+  border-top-color: #fff;
+}
+
+.dark .singleSummary .summaryLeft {
+  background-color: #053EFF !important;
+}
+
+.dark .singleSummary .money {
+  background-image: url(../img/dashboard/moneyWhite.svg) !important;
+}
+
+.dark .singleSummary .profit {
+  background-image: url(../img/dashboard/profitWhite.svg) !important;
+}
+
+.dark .singleSummary .withdrawal {
+  background-image: url(../img/dashboard/withdrawalWhite.svg) !important;
+}
+
+.dark .singleSummary .wallet {
+  background-image: url(../img/dashboard/walletWhite.svg) !important;
+}
+
+.dark .singleSummary .summaryLeft img {
+  fill: #fff !important;
+}
+
+.dark nav a {
+  color: #454391;
+}
+
+.dark .pageHeading h2, .dark .pageHeading h2, .dark nav .active, .dark main h4, .dark main h3, .dark .statTitle span {
+  color: #FFFFFF !important;
+}
+
+.dark .dateRange .icon {
+  background: #13197C !important;
+  border-color: #13197C !important;
+}
+
+.dark .dateRange input {
+  background: #11104D;
+  border-color: #11104D !important;
+}
+
+.dark .dateRange select {
+  background: #11104D !important;
+  border-color: #11104D !important;
+  color: #fff;
+}
+
+.dark .daterangepicker {
+  border-color: #29249f;
+  padding: 1px;
+  background: #11104d;
+}
+
+.dark .daterangepicker .drp-calendar, .dark .daterangepicker .calendar-table {
+  background: #11104D;
+  color: #fff;
+  border-color: #11104D;
+}
+
+.dark .daterangepicker .drp-calendar .off, .dark .daterangepicker .calendar-table .off {
+  color: #87f7f7;
+  background: transparent;
+}
+
+.dark .daterangepicker .drp-calendar td:hover, .dark .daterangepicker .calendar-table td:hover {
+  background: #053EFF;
+}
+
+.dark .daterangepicker .drp-calendar .prev span, .dark .daterangepicker .drp-calendar .next span, .dark .daterangepicker .calendar-table .prev span, .dark .daterangepicker .calendar-table .next span {
+  border-color: #fff;
+}
+
+.dark .daterangepicker .drp-calendar select, .dark .daterangepicker .calendar-table select {
+  background: #161365;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.dark .daterangepicker .drp-buttons {
+  border-color: #11104D;
+  background: #29249f;
+}
+
+.dark .daterangepicker .drp-buttons button {
+  color: #fff;
+}
+
+.dark .daterangepicker:before, .dark .daterangepicker:after {
+  border-bottom-color: #29249f;
+}
+
+.dark .userMngmtWrap .userMngmtTbl .options {
+  background: #101677;
+  border-color: #053DFC;
+}
+
+.dark .userMngmtWrap .userMngmtTbl .options button {
+  color: #fff;
+}
+
+.dark .userMngmtWrap .userMngmtTbl .options button:nth-child(2) {
+  border-color: #053DFC;
+}
+
+.modal {
+  /* The slider itself */
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+}
+
+.modal .dolar {
+  top: 6px;
+  left: 0;
+  z-index: 5;
+}
+
+.modal .withNum {
+  max-width: 150px;
+  padding-left: 10px;
+}
+
+.modal .rangeProgress {
+  height: 4px;
+  background: #747499;
+  border-radius: 50px;
+  top: 17px;
+  z-index: 1;
+}
+
+.modal .range {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  width: calc(100% - 50px);
+  height: 4px;
+  /* Specified height */
+  background: #11104D;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  border-radius: 50px;
+}
+
+.modal .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 20px;
+  /* Set a specific slider handle width */
+  height: 20px;
+  /* Slider handle height */
+  background: #FFFFFF;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+}
+
+.modal .range::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #FFFFFF;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+}
+
+#financeModal .input-group, #financeModal small, #financeModal .name {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+#beneficiaryMngmtModal .range {
+  width: calc(100% - 65px);
+}
+/*# sourceMappingURL=dashboard.css.map */
